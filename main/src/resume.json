@@ -191,7 +191,7 @@
     "summary": "Description…",
     "highlights": [
       "Hundreds of Full Year Leases Completed",
-      "Large Scale Marketing Event Hosting",
+      "Large Scale Marketing & Event Hosting",
       "YTD Lease % increase upto 20% each year"
     ]
   }],
@@ -206,5 +206,31 @@
     "position": "Volunteer",
     "Date": "May, 2017",
     "summary": "Description…"
+  }],
+  "Other Experience": [{
+    "name" : "",
+    "Description" : "",
+    "Date" : ""
+  },
+  {
+    "name" : "",
+    "Description" : "",
+    "Date" : ""
+  },
+  {
+    "name" : "",
+    "Description" : "",
+    "Date" : ""
+  },
+  {
+    "name" : "",
+    "Description" : "",
+    "Date" : ""
+  },
+  {
+    "name" : "",
+    "Description" : "",
+    "Date" : ""
   }]
+
 }
