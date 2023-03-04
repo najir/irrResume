@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import ExperienceInfo from './components/ExperienceInfo';
+import UserInfo from './components/UserInfo';
+import SkillInfo from './components/SkillsInfo';
+import OtherInfo from './components/OtherInfo';
 
 function App() {
   return (
@@ -18,6 +22,17 @@ function App() {
           Learn React
         </a>
       </header>
+      <div class="flex-container">
+        <div id="leftBox">
+          <UserInfo />
+          <SkillInfo />
+          <OtherInfo />
+        </div>
+        <div id="mainBox">
+          <ExperienceInfo />
+        </div>
+      </div>
+      
     </div>
   );
 }

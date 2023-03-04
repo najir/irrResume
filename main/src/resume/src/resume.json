@@ -26,7 +26,11 @@
     "startDate": "September, 2019",
     "endDate": "October, 2021",
     "courses": [
-      "DB1101 - Basic SQL"
+      "CIS 210-212",
+      "CIS 311 DataStruc",
+      "CIS 312 Algo",
+      "CIS 313 Sys Ops",
+      "CIS 321"
     ]
   },
   {
@@ -36,7 +40,6 @@
     "startDate": "September, 2017",
     "endDate": "June, 2019",
     "courses": [
-      "DB1101 - Basic SQL"
     ]
   }],
   "certificates": [{
@@ -98,18 +101,19 @@
     "name": "Video Game Development",
     "keywords": [
       "Unreal Engine 4",
+      "UE4 BluePrints",
+      "RPG Maker",
+      "GameMaker"
+    ]
+  },
+  {
+    "name": "3D modeling/Texturing",
+    "keywords": [
       "Blender",
       "Maya",
       "Substance Painter",
       "ZBrush",
-      "UE4 BluePrints",
-      "RPG Maker VX"
-    ]
-  },
-  {
-    "name": "PowerLifting",
-    "keywords": [
-      "Unreal Engine 4"
+      "Krita"
     ]
   },
   {
@@ -138,21 +142,21 @@
   }],
   "projects": [{
     "name": "FrontierZ Launcher",
-    "description": "Description…",
+    "description": "Desktop application to link with existing game launcher system. QT Framework front end via Pyside6. Pulls server images, banners, install data from server owners endpoint. Also pulls RSS feed to host news/updates for server owners to user. Users can also add personal servers. Data hosted locally via SQLite3 implementation.",
     "keywords": [
       "QT Framework",
       "Python",
       "SQLITE 3",
       "PySide 6"
     ],
-    "Date": "Feburary 2023",
+    "date": "Feburary 2023",
     "url": "https://project.com/",
     "entity": "Entity",
     "type": "application"
   },
   {
     "name": "IrrPortfolio",
-    "description": "Description…",
+    "description": "ASP.NET Core MVC server hosting React SPA. User Auth/Identification via Duende Identity 4. Blog implementation via ____ to SQL database. Book review system stored in database with API calls to server. Mainpage pull github API to visualize personal data via ____ react library.",
     "keywords": [
       "ASP.NET 7.0",
       "MVC",
@@ -162,14 +166,14 @@
       "REACT.js",
       "NODE.js"
     ],
-    "Date": "Feburary/March 2023",
+    "date": "Feburary/March 2023",
     "url": "https://project.com/",
     "entity": "Entity",
     "type": "application"
   },
   {
     "name": "RustPSM",
-    "description": "Description…",
+    "description": "Vue based SPA website running on Node.js routes. Creates pages based on SteamAPI userdata calls, create an accessable store of data on a mongoDB database.",
     "keywords": [
       "Node Route?",
       "MongoDB",
@@ -178,7 +182,21 @@
       "???",
       "NODE.JS"
     ],
-    "Date": "May 2022",
+    "date": "May 2022",
+    "url": "https://project.com/",
+    "entity": "Entity",
+    "type": "application"
+  },
+  {
+    "name": "IrrResume",
+    "description": "This resume is a JSONSchema wrapped by a REACT.js webpage that is then converted to PDF if needed by ___. Integrated into my portfolio website.",
+    "keywords": [
+      "React.js",
+      "Jsonresume Schema",
+      "VSCode",
+      "Javascript"
+    ],
+    "date": "March 2023",
     "url": "https://project.com/",
     "entity": "Entity",
     "type": "application"
@@ -198,13 +216,13 @@
   "volunteer": [{
     "organization": "Gods StoreHouse",
     "position": "Volunteer",
-    "Date": "May, 2016",
+    "date": "May, 2016",
     "summary": "Description…"
   },
   {
     "organization": "Harrisburg City",
     "position": "Volunteer",
-    "Date": "May, 2017",
+    "date": "May, 2017",
     "summary": "Description…"
   }],
   "Other Experience": [{
@@ -232,5 +250,4 @@
     "Description" : "",
     "Date" : ""
   }]
-
 }
