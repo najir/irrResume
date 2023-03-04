@@ -6,6 +6,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.App{
+  background-color: beige;
+  border: 1px solid black;
+  margin: 25px auto 25px auto;
+  padding: 25px 35px 25px 35px;
+  width: 77%;
+}
 .flex-list{
   display: flex;
   flex-direction: row;
@@ -18,7 +25,24 @@ body {
   justify-content: left;
   flex-wrap: wrap;
 }
-
+.flex-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: nowrap;
+  align-items: space-between;
+}
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.flex-user{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
 #interest, #courses, #keyword{
   font-size: 9px;
   border-left: 2px solid black;
@@ -37,16 +61,6 @@ body {
 #interest{
   width: 75px;
 }
-.flex-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: beige;
-  border: 1px solid black;
-  margin: 25px auto 25px auto;
-  padding: 25px 35px 25px 35px;
-  width: 77%;
-}
 h1, h2, h3, h4, h5, p{
   line-height: 1;
   margin: 0 0 0 0;
@@ -64,13 +78,13 @@ h6{
   margin: -2px 0 8px 0;
 }
 hr{
-margin: 0 0 5px 0;
+border: 1px solid black;
+margin: 0 0 20px 0;
 }
 #leftBox{
   text-align: left;
   float: left;
   flex: 1 0 0;
-  border-right: 2px solid black;
 }
 #mainBox{
   text-align: left;
@@ -103,13 +117,19 @@ margin: 0 0 5px 0;
   margin: 0px 0 -15px 0;
 }
 #profile{
-  margin: 0 0 15px 2px;
+  flex: 0 0 15%;
+  margin: 0 0 10px 2px;
+  padding: 6px 1px 6px 2px;
+  border-left: 3px solid black;
 }
 #socials{
   margin: 45px 0 0 0;
 }
 #educationname{
   margin: 0px 0 20px 0;
+}
+#experiencetitle{
+  margin: 0 0 -8px 0;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

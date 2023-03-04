@@ -206,7 +206,7 @@
     "position": "Leasing Agent",
     "startDate": "2019-01-19",
     "endDate": "2023-03-14",
-    "summary": "Description…",
+    "summary": "Followed up with prospects via phone, email, and personal tours to close leases. Managed, scheduled, and hosted events for current residents. A resource for current residents to help with maintenance/emergency calls, questions/concerns, and mediate issues. Participated in and hosted advertising, tabeling, and other outreach for prospective clients.",
     "highlights": [
       "Hundreds of Full Year Leases Completed",
       "Large Scale Marketing & Event Hosting",
@@ -220,34 +220,19 @@
     "summary": "Description…"
   },
   {
-    "organization": "Harrisburg City",
+    "organization": "Harrisburg City Landscape",
     "position": "Volunteer",
     "date": "May, 2017",
     "summary": "Description…"
   }],
-  "Other Experience": [{
-    "name" : "",
-    "Description" : "",
-    "Date" : ""
+  "other": [{
+    "name" : "WCStudios",
+    "description" : "Ran a small gamedev studio running rpgmaker, mainly making small mod solutions for other games",
+    "date" : "~2014-2016"
   },
   {
-    "name" : "",
-    "Description" : "",
-    "Date" : ""
-  },
-  {
-    "name" : "",
-    "Description" : "",
-    "Date" : ""
-  },
-  {
-    "name" : "",
-    "Description" : "",
-    "Date" : ""
-  },
-  {
-    "name" : "",
-    "Description" : "",
-    "Date" : ""
+    "name" : "CPA Shadow",
+    "description" : "Shadowed a CPA. Participating in meetings, completed bookkeeping tasks, and reviewed a business's finances",
+    "date" : "June, 2017"
   }]
 }

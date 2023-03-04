@@ -20,14 +20,15 @@ class ExperienceInfo extends React.Component{
                 <h3 id="title">Work</h3>
                 <hr/>
 
-                <h4>{resume.work[0].name}</h4>
-                <h5>{resume.work[0].Position}</h5>
+                <h4 id="experiencetitle">{resume.work[0].name}</h4>
+                <h5>{resume.work[0].position}</h5>
                 <h6>{resume.work[0].startDate} - {resume.work[0].endDate}</h6>
-                <p>{resume.work[0].summary}</p>
+                <h5>{resume.work[0].summary}</h5>
 
-                <h3 id="title">Other</h3>
+                <h3 id="title">Volunteer and Other Experience</h3>
                 {resume.volunteer.map((col, row) => 
                 <VolunteerWrapper key={row} {...col}/>)}
+                <OtherExpWrapper />
             </div>
         )
     }
@@ -49,7 +50,7 @@ class EducationWrapper extends React.Component{
     }
     educationHelper(){
         return(
-            <div>
+            <div id="projectwrapper">
                 <h6>Relevant Courses Include;</h6>
                 <div class="flex-other">
                     {resume.education[0].courses.map((col, row) =>
@@ -66,6 +67,22 @@ class VolunteerWrapper extends React.Component{
             <div>
                 <h5>{this.props.organization}</h5>
                 <h6>{this.props.date}</h6>
+            </div>
+        )
+    }
+}
+
+class OtherExpWrapper extends React.Component{
+    render(){
+        return resume.other.map((col, row) =>
+        <this.otherExperienceHelper key={row} {...col} />)
+    }
+    otherExperienceHelper(props){
+        return(
+            <div>
+                <h5 id="experiencetitle">{props.name}</h5>
+                <h5>{props.description}</h5>
+                <h6>{props.date}</h6>
             </div>
         )
     }
