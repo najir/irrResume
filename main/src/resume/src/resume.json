@@ -30,7 +30,11 @@
       "CIS 311 DataStruc",
       "CIS 312 Algo",
       "CIS 313 Sys Ops",
-      "CIS 321"
+      "CIS 321 Web Dev",
+      "Data Structures I II",
+      "Calc I II III",
+      "Psych 101-103, 201-203, 309, 311, 313",
+      " "
     ]
   },
   {
@@ -56,7 +60,9 @@
       "CSS",
       "JavaScript",
       "REACT",
-      "VUE"
+      "VUE",
+      "NODE",
+      "Routes"
     ]
   },
   {
@@ -84,19 +90,26 @@
       "C++",
       "Python",
       "QT Designer",
-      "TKBuilder"
+      "TKBuilder",
+      "SQLite3"
     ]
-  },
-  {
-    "name": "Fundamentals",
-    "level": "5",
-    "keywords": [
-      "R/B Tree's",
-      "ASL Tree's",
-      "Data Structures",
-      "Sorting Algorithms"
-    ]
-  }],
+},{
+  "name": "Languages and Enviroments",
+  "level": "",
+  "keywords": [
+    "C++",
+    "C#",
+    "Python",
+    "JavaScript",
+    "HTML/CSS",
+    "VisualStudio",
+    "VSCode",
+    "PyCharm",
+    "Git",
+    "VIM",
+    "BASH"
+  ]
+}],
   "interests": [{
     "name": "Video Game Development",
     "keywords": [
@@ -119,21 +132,11 @@
   {
     "name": "Local Politics",
     "keywords": [
-      "Book Ref..",
-      "Book Ref2...",
-      "Topic interest1",
-      "Topic interest2"
     ]
   },
   {
-    "name": "Psychology",
+    "name": "Psychology & Philosophy",
     "keywords": [
-      "College Course1",
-      "College Course2",
-      "College Course3",
-      "College Course4",
-      "Topic Interest1",
-      "Topic Interest 2"
     ]
   }],
   "references": [{
@@ -164,7 +167,8 @@
       "SQL",
       "LINQ",
       "REACT.js",
-      "NODE.js"
+      "NODE.js",
+      "Duende"
     ],
     "date": "Feburary/March 2023",
     "url": "https://project.com/",

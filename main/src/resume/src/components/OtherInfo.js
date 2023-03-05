@@ -15,7 +15,7 @@ class InfoWrapper extends React.Component{
     render(){
         return(
             <div>
-                <h5 id="subtitle">Other Interests</h5>
+                <h4 id="subtitle">Other Interests</h4>
                 {resume.interests.map((col, row) =>
                     <this.InfoHelper key={row} {...col} />)}
             </div>

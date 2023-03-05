@@ -11,21 +11,20 @@ class ExperienceInfo extends React.Component{
     render() {
         return (
             <div>
-                <h3 id="title">Projects</h3>
-                <hr/>
+                <h2 id="title">Projects</h2>
                 {resume.projects.map((col, row) => 
                 <ProjectWrapper key={row} {...col}/>)}
+                <h6>See more of my projects and available source code at my Github: https://github.com/najir </h6>
                 <EducationWrapper />
 
-                <h3 id="title">Work</h3>
-                <hr/>
+                <h2 id="title">Work</h2>
 
                 <h4 id="experiencetitle">{resume.work[0].name}</h4>
                 <h5>{resume.work[0].position}</h5>
                 <h6>{resume.work[0].startDate} - {resume.work[0].endDate}</h6>
-                <h5>{resume.work[0].summary}</h5>
+                <p style={{fontSize: "12px", color:"black"}}>{resume.work[0].summary}</p>
 
-                <h3 id="title">Volunteer and Other Experience</h3>
+                <h2 id="title">Volunteer and Other Experience</h2>
                 {resume.volunteer.map((col, row) => 
                 <VolunteerWrapper key={row} {...col}/>)}
                 <OtherExpWrapper />
@@ -38,8 +37,7 @@ class EducationWrapper extends React.Component{
     render() {
         return (
             <div>
-                <h3 id="title">Education</h3>
-                <hr/>
+                <h2 id="title">Education</h2>
                 <h3>{resume.education[0].institution}</h3>
                 <h6 id="educationname">{resume.education[0].startDate} - {resume.education[0].endDate}, {resume.education[0].studyType} in {resume.education[0].area}</h6>
                 <h3>{resume.education[1].institution}</h3>
@@ -81,7 +79,7 @@ class OtherExpWrapper extends React.Component{
         return(
             <div>
                 <h5 id="experiencetitle">{props.name}</h5>
-                <h5>{props.description}</h5>
+                <p style={{fontSize: "12px"}}>{props.description}</p>
                 <h6>{props.date}</h6>
             </div>
         )
@@ -94,7 +92,7 @@ class ProjectWrapper extends React.Component{
             <div>
                 <h3>{this.props.name}</h3>
                 <h6>{this.props.date}</h6>
-                <h5>{this.props.description}</h5>
+                <p style={{fontSize: "12px"}}>{this.props.description}</p>
                 <div id="projectwrapper" class="flex-list">
                     {this.props.keywords.map((col, row) =>
                     <h6 id="keyword" key={row}>{col}</h6>)}

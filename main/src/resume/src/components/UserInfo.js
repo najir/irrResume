@@ -9,7 +9,7 @@ class UserInfo extends React.Component{
                 <h1 id="maintitle">{resume.basics.name}</h1>
                 <h3 id="maintitle" style={{marginLeft: "24px"}}>{resume.basics.label}</h3>
                 </div>
-                <hr></hr>
+                <hr style={{width:"100%"}}></hr>
             </div>
             
            
@@ -21,7 +21,7 @@ export class ProfileWrapper extends React.Component{
     render(){
         return (
             <div>
-                <div class="flex-header">
+                <div class="flex-header" style={{margin:"15px 0 0 0"}}>
                     <h6 id="profile">{resume.basics.email}</h6>
                     <h6 id="profile">{resume.basics.phone}</h6>
                     <h6 id="profile">{resume.basics.url}</h6>
