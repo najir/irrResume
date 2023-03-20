@@ -1,19 +1,19 @@
-.App {
+.resume {
   text-align: center;
 }
 
-.App-logo {
+.resume-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .resume-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
+.resume-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,11 +24,11 @@
   color: white;
 }
 
-.App-link {
+.resume-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes resume-logo-spin {
   from {
     transform: rotate(0deg);
   }

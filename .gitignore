@@ -2,7 +2,7 @@
 
 # dependencies
 */node_modules
-/resume/node_modules
+/main/src/resume/node_modules
 /.pnp
 .pnp.js
 

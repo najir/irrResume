@@ -1,3 +1,33 @@
+@font-face {
+  font-family: 'Didot';
+  src: local('Didot'), url(./rsc/Didot.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Didot';
+  src: local('Didot'), url(./rsc/DidotBold.otf) format('opentype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Didot';
+  src: local('Didot'), url(./rsc/DidotItalic.otf) format('opentype');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Didot';
+  src: local('Didot'), url(./rsc/DidotBoldItalic.ttf) format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+:root{
+  --resume-keyword: 255, 225, 156;
+  --resume-border: 78, 86, 78;
+  --resume-accent: 213, 45, 11;
+  --resume-accent2: 213, 45, 11;
+  --resume-accent3: 64, 118, 140;
+
+}
 body {
   margin: 0;
   font-family: "Segoe UI",-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,9 +36,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.App{
-  background-color: beige;
-  border: 1px solid black;
+.initial{
+  font-family: 'Didot';
+  color-scheme: only light;
+}
+.resume{
+  color: black;
+  background-color: rgb(255, 255, 248);
   margin: 25px auto 25px auto;
   padding: 25px 35px 25px 35px;
   width: 77%;
@@ -28,24 +62,45 @@ body {
 .flex-header{
   display: flex;
   flex-direction: column;
-  justify-content: left;
   flex-wrap: wrap;
-  align-items: space-between;
+  align-items: left;
+  line-height: 1;
+  margin: 20px 0 0 0
 }
 .flex-container{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 15px;
 }
 .flex-user{
+  margin: 20px 0 0 0;
   display: flex;
   flex-direction: row;
   justify-content: left;
   align-items: center;
 }
-#interest, #courses, #keyword{
-  font-size: 9px;
-  border-left: 2px solid black;
+.flex-icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: top;
+}
+.icon-size{
+  font-size: 18px;
+  margin-top: -4px;
+  margin-right: 3px;
+}
+.icon-float{
+  font-size: 36px;
+  margin-top: -4px;
+  margin-right: 3px;
+  float: right;
+}
+#interest, #courses, #keyword, #keyword-project{
+  font-size: 10px;
+  font-weight: 900;
+  border-left: 2px solid rgb(var(--resume-border));
   margin: 1px 1px 1px 1px;
   padding: 6px 2px 6px 2px;
   line-height: 0;
@@ -54,12 +109,15 @@ body {
   max-height: 5px;
 }
 #keyword{
-  border: 1px solid black;
-  background-color: rgb(164,189,186);
+  border: none;
+  padding: 10px 4px 8px 4px;
+  background-color: rgb(var(--resume-keyword));
+  border-radius: 5%;
   text-align: center;
 }
-#interest{
-  width: 75px;
+#keyword-project{
+  border-radius: 5%;
+  text-align: center;
 }
 h1, h2, h3, h4, h5, p{
   line-height: 1;
@@ -72,59 +130,68 @@ h1, h2{
 h3{
   padding: 0 0 10px 0;
 }
+h5{
+  color: rgb(var(--resume-accent2));
+}
 h6{
   line-height: 0;
   padding: 0 0 0 0;
   margin: -2px 0 8px 0;
 }
 hr{
-border: 1.33px solid black;
+border: 1.33px solid rgb(var(--resume-border));
 margin: 0 0 5px 0;
-width: 125px;
+}
+.date-color{
+  color: rgb(var(--resume-accent3));
 }
 #leftBox{
   text-align: left;
-  float: left;
   flex: 1 0 0;
 }
 #mainBox{
   text-align: left;
-  margin: 0 0 0 10px;
-  flex: 4 0 0;
+  margin: 0 0 0 5px;
+  flex: 6 0 0;
 }
 #experiencelevel{
-  height: 8px;  
+  height: 4px;
+  margin-bottom: 3px;
+  border-radius: 0%;
+}
+progress::-webkit-progress-value {
+  background-color: rgb(var(--resume-accent));
 }
 #skillname{
   line-height: 1;
   padding: 0 0 0 0;
-  margin: 25px 0 -10px 0;
+  margin: 25px 0 -5px 0;
 }
 #projectwrapper{
   margin: -8px 0 15px 0;
 }
 #title{
-  color: rgb(64, 88, 85);
-  margin: 15px 0 5px -3px;
-  padding: 0 0 0 1px;
-  border-left: 3px solid black;
+  color: rgb(var(--resume-accent2));
+  margin: 15px 0 5px -15px;
+  padding: 0 0 0 2px;
+  border-left: 4px solid rgb(var(--resume-border));
 }
 #subtitle{
-  margin: 25px 0 -5px 0;
+  margin: 25px 0 10px 0;
 }
 #interestname{
   line-height: 1;
   padding: 0 0 0 0;
-  margin: 0px 0 15px 0;
+  margin: 15px 0 25px 0;
 }
 #maintitle{
   margin: 0px 0 -15px 0;
 }
 #profile{
-  flex: 0 0 15%;
-  margin: 0 0 10px 2px;
-  padding: 6px 1px 6px 2px;
-  border-left: 3px solid black;
+  line-height: 1;
+  flex-shrink: 10;
+  margin: 0 0 10px 0px;
+  padding: 0px 1px 10px 2px;
 }
 #socials{
   margin: 45px 0 0 0;
@@ -135,24 +202,17 @@ width: 125px;
 #experiencetitle{
   margin: 0 0 -8px 0;
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
 
 @media print{
-  .App{
+  .resume{
     background-color: white;
     border: none;
     margin: 0px 0 0px 0;
     padding: 0px 0px 0px 0px;
     width: 100%;
   }
-  #leftBox{
-    text-align: left;
-    float: left;
-    flex: 2 0 0;
-  }
+  
   #experiencetitle{
     margin: 5px 0 -8px 0;
   }
