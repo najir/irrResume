@@ -35,6 +35,10 @@ export class ProfileWrapper extends React.Component{
                       <i className="bi bi-github icon-size"></i>
                       <h6 id="profile">{resume.basics.url}</h6>
                     </div>
+                    <div className="flex-icon">
+                      <i className="bi bi-house-door-fill icon-size"></i>
+                      <h6 id="profile">{resume.basics.location.address}, {resume.basics.location.city}</h6>
+                    </div>
                 </div>
             </div>
             

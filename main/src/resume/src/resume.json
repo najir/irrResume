@@ -9,7 +9,7 @@
     "location": {
       "address": "8650 SW Canyon Lane",
       "postalCode": "OR, 97225",
-      "city": "Beaverton",
+      "city": "Portland",
       "countryCode": "US",
       "region": "Oregon"
     },
@@ -27,9 +27,9 @@
     "endDate": "October, 2021",
     "courses": [
       "CIS 210-212",
-      "CIS 311 DataStruc",
-      "CIS 312 Algo",
-      "CIS 313 Sys Ops",
+      "CIS 313 DataStruc",
+      "CIS 314 Algo",
+      "CIS 315 Sys Ops",
       "CIS 321 Web Dev",
       "Data Structures I II",
       "Calc I II III",
@@ -84,7 +84,8 @@
       "Express",
       "Identity 4",
       "REST",
-      "GraphQL"
+      "GraphQL",
+      "Azure"
     ]
   },
   {
@@ -167,7 +168,8 @@
       "Identity 4",
       "Bootstrap/reactstrap",
       "GraphQL",
-      "REST"
+      "REST",
+      "Azure"
     ],
     "date": "Feburary/March 2023",
     "url": "https://project.com/",
