@@ -36,7 +36,7 @@ class SkillsWrapper extends React.Component{
             returnStatement = (
                 (
                     <div>
-                        <h4 style={{margin:"25px 0 -5px 0"}}>{props.name}</h4>
+                        <h4 style={{margin:"15px 0 -5px 0"}}>{props.name}</h4>
                         <div class="flex-list">
                             {props.keywords.map((col, row) =>
                             <h6 id="keyword" key={row}>{col}</h6>)}

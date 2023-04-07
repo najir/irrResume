@@ -22,11 +22,18 @@
 }
 :root{
   --resume-keyword: 255, 225, 156;
-  --resume-border: 78, 86, 78;
+  --resume-border: 0, 0, 0;
   --resume-accent: 213, 45, 11;
   --resume-accent2: 213, 45, 11;
   --resume-accent3: 64, 118, 140;
 
+}
+p{
+  color: rgb(66, 66, 66);
+}
+p, h6, h5{
+  font-weight: 900;
+  text-shadow: 0 0 .2px;
 }
 body {
   margin: 0;
@@ -74,7 +81,7 @@ body {
   gap: 15px;
 }
 .flex-user{
-  margin: 20px 0 0 0;
+  margin: 0px 0 0 0;
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -165,7 +172,7 @@ progress::-webkit-progress-value {
 #skillname{
   line-height: 1;
   padding: 0 0 0 0;
-  margin: 25px 0 -5px 0;
+  margin: 15px 0 -5px 0;
 }
 #projectwrapper{
   margin: -8px 0 15px 0;
@@ -190,7 +197,7 @@ progress::-webkit-progress-value {
 #profile{
   line-height: 1;
   flex-shrink: 10;
-  margin: 0 0 10px 0px;
+  letter-spacing: 1px;
   padding: 0px 1px 10px 2px;
 }
 #socials{

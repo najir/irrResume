@@ -11,7 +11,7 @@ class ExperienceInfo extends React.Component{
     render() {
         return (
             <div>
-                <h2 id="title">Projects<span className="icon-float"><i class="bi bi-kanban-fill icon-float"></i></span></h2>
+                <h2 id="title">Experience<span className="icon-float"><i class="bi bi-kanban-fill icon-float"></i></span></h2>
                 {resume.projects.map((col, row) => 
                 <ProjectWrapper key={row} {...col}/>)}
                 <h6>See more of my projects and available source code at my Github: https://github.com/najir </h6>
@@ -22,7 +22,7 @@ class ExperienceInfo extends React.Component{
                 <h4 id="experiencetitle">{resume.work[0].name}</h4>
                 <h5>{resume.work[0].position}</h5>
                 <h6 className="date-color">{resume.work[0].startDate} - {resume.work[0].endDate}</h6>
-                <p style={{fontSize: "12px", color:"black"}}>{resume.work[0].summary}</p>
+                <p style={{fontSize: "12px"}}>{resume.work[0].summary}</p>
 
                 <h2 id="title">Volunteer and Other Experience<span className="icon-float"><i class="bi bi-briefcase-fill icon-float"></i></span></h2>
                 {resume.volunteer.map((col, row) => 
@@ -63,8 +63,8 @@ class VolunteerWrapper extends React.Component{
     render(){
         return(
             <div>
-                <h5>{this.props.organization}</h5>
-                <h6 className="date-color">{this.props.date}</h6>
+                <h5 style={{padding: "0"}}>{this.props.organization}</h5>
+                <p className="date-color" style={{fontSize: "11px", padding:"3px"}}>{this.props.date}</p>
             </div>
         )
     }
