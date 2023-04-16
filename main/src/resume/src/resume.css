@@ -54,6 +54,9 @@ body {
   padding: 25px 35px 25px 35px;
   width: 77%;
 }
+.resume .sourcecode-text{
+  margin-top: 3px;
+}
 .flex-list{
   display: flex;
   flex-direction: row;
@@ -184,7 +187,7 @@ progress::-webkit-progress-value {
   border-left: 4px solid rgb(var(--resume-border));
 }
 #subtitle{
-  margin: 25px 0 10px 0;
+  margin: 15px 0 -20px 0;
 }
 #interestname{
   line-height: 1;

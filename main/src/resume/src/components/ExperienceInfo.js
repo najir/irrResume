@@ -14,7 +14,7 @@ class ExperienceInfo extends React.Component{
                 <h2 id="title">Experience<span className="icon-float"><i class="bi bi-kanban-fill icon-float"></i></span></h2>
                 {resume.projects.map((col, row) => 
                 <ProjectWrapper key={row} {...col}/>)}
-                <h6>See more of my projects and available source code at my Github: https://github.com/najir </h6>
+                <h6 className="sourcecode-text">See more of my projects and available source code at my Github: https://github.com/najir </h6>
                 <EducationWrapper />
 
                 <h2 id="title">Work<span className="icon-float"><i class="bi bi-building-fill icon-float"></i></span></h2>
@@ -40,7 +40,6 @@ class EducationWrapper extends React.Component{
                 <h2 id="title">Education<span className="icon-float"><i class="bi bi-mortarboard-fill icon-float"></i></span></h2>
                 <h3>{resume.education[0].institution}</h3>
                 <h6 id="educationname" className="date-color">{resume.education[0].startDate} - {resume.education[0].endDate}, {resume.education[0].studyType} in {resume.education[0].area}</h6>
-                <this.educationHelper />
                 <h3>{resume.education[1].institution}</h3>
                 <h6 id="educationname" className="date-color">{resume.education[1].startDate} - {resume.education[1].endDate}</h6>
             </div>
@@ -93,10 +92,6 @@ class ProjectWrapper extends React.Component{
                 <h3>{this.props.name}</h3>
                 <h6 className="date-color">{this.props.date}</h6>
                 <p style={{fontSize: "12px"}}>{this.props.description}</p>
-                <div id="projectwrapper" class="flex-list">
-                    {this.props.keywords.map((col, row) =>
-                    <h6 id="keyword-project" key={row}>{col}</h6>)}
-                </div>
             </div>
         )
     }

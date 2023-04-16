@@ -97,23 +97,23 @@
       "QT Designer",
       "TKBuilder",
       "SQLite3",
-      "Pyside"
+      "Pyside",
+      "Electron",
+      "Forge"
     ]
 },{
-  "name": "Languages and Enviroments",
+  "name": "Enviroments & Tools",
   "level": "",
   "keywords": [
-    "C++",
-    "C#",
-    "Python",
-    "JavaScript",
-    "HTML/CSS",
     "VisualStudio",
     "VSCode",
     "PyCharm",
     "Git",
     "VIM",
-    "BASH"
+    "BASH",
+    "Docker",
+    "Bitbucket",
+    "Linux"
   ]
 }],
   "interests": [{
@@ -155,7 +155,7 @@
   },
   {
     "name": "IrrPortfolio",
-    "description": "Personal Portfolio Website. ASP.NET Core MVC backend and REACT frontend with bootstrap, reactstrap, react-router for dynamic pages. User Role Auth/Identification via Claims JWT token on Identity. Github GraphQL API endpoints on back-end. Integrated irrResume page. Full blog implementation and Web Api Access. ",
+    "description": "Personal Portfolio Website. ASP.NET Core MVC backend and REACT frontend with bootstrap, reactstrap, react-router for dynamic pages. User Role Auth/Identification via Claims JWT token on Identity. Github GraphQL API endpoints on back-end. Integrated irrResume page. Full blog implementation via TipTap along with Web Api Access.",
     "keywords": [
       "ASP.NET 7.0",
       "MVC",
@@ -177,7 +177,7 @@
   },
   {
     "name": "RustPSM",
-    "description": "Vue based SPA website running on Node.js and Express. Users enter a SteamID and a unique page is created showing stats pulled from Rust(Game) API. Data is then stored in a MongoDB Atlas server for easier loads, and large scale data collection",
+    "description": "Vue based SPA website running on Node.js and Express. Users enter a SteamID and a unique page is created showing stats pulled from Rust(Game) API. Data is then stored in a MongoDB Atlas server for easier loads, and large scale data collection.",
     "keywords": [
       "MongoDB",
       "Express",
@@ -202,8 +202,8 @@
     "type": "application"
   },
   {
-    "name": "wikiNotes",
-    "description": "My personal Wiki for notes and research running on a docker-container with SQLlite3, hosted on a rasberry pi 4.",
+    "name": "wikiNotes & wikiRun",
+    "description": "My personal Wiki for notes and research running on a docker-container with SQLlite3, hosted on a rasberry pi 4. Along with an electron based application that wraps the website in an effecient chromium browser for easy access.",
     "keywords": [
     ],
     "date": "April 2023",
